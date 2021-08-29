@@ -116,7 +116,7 @@ int32 TC_SYNC_LibInit(void);
 *******************************************************************************/
 int32 TC_SYNC_GetTransferFrame(uint8 *pTfBuff, uint8 *pCltu, 
                                uint16 tfBuffSize, uint16 cltuLength, 
-                               boolean derandomize);
+                               bool derandomize);
 
 
 /******************************************************************************/

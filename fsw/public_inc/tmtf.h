@@ -161,7 +161,7 @@ int32 TMTF_SetVcId(TMTF_PriHdr_t *tfPtr, uint16 val);
  *   TMTF_INVALID_POINTER  if the input pointer is NULL
  *
  */
-int32 TMTF_SetOcfFlag(TMTF_PriHdr_t *tfPtr, boolean val);
+int32 TMTF_SetOcfFlag(TMTF_PriHdr_t *tfPtr, bool val);
 
 
 /*
@@ -267,7 +267,7 @@ int32 TMTF_IncrVcFrameCount(TMTF_PriHdr_t *tfPtr);
  *   TMTF_INVALID_POINTER  if the input pointer is NULL
  *
  */
-int32 TMTF_SetSecHdrFlag(TMTF_PriHdr_t *tfPtr, boolean val);
+int32 TMTF_SetSecHdrFlag(TMTF_PriHdr_t *tfPtr, bool val);
 
 
 /*
@@ -287,7 +287,7 @@ int32 TMTF_SetSecHdrFlag(TMTF_PriHdr_t *tfPtr, boolean val);
  *   TMTF_INVALID_POINTER  if the input pointer is NULL
  *
  */
-int32 TMTF_SetSyncFlag(TMTF_PriHdr_t *tfPtr, boolean val);
+int32 TMTF_SetSyncFlag(TMTF_PriHdr_t *tfPtr, bool val);
 
 
 /*
@@ -305,7 +305,7 @@ int32 TMTF_SetSyncFlag(TMTF_PriHdr_t *tfPtr, boolean val);
  *   TMTF_INVALID_POINTER  if the input pointer is NULL
  *
  */
-int32 TMTF_SetPacketOrderFlag(TMTF_PriHdr_t *tfPtr, boolean val);
+int32 TMTF_SetPacketOrderFlag(TMTF_PriHdr_t *tfPtr, bool val);
 
 
 /*

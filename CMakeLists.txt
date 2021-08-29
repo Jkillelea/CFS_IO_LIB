@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.6.4)
-project(CFS_IO_LIB C)
+project(IO_LIB C)
 
 include_directories(fsw/public_inc)
 

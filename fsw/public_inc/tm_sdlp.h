@@ -36,6 +36,8 @@ extern "C" {
 ** Includes
 *******************************************************************************/
 #include "io_lib.h"
+#include "cfe_msg.h"
+#include "cfe_sb.h"
 #include "tmtf.h"
 
 

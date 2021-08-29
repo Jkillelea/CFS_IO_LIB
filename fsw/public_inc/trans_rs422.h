@@ -31,6 +31,11 @@
 
 #include "io_lib.h"
 
+#include <strings.h>
+#include <termios.h>
+#include <unistd.h>
+#include <fcntl.h>
+
 /* Possible timeout + minBytes settings:
  * min = 0, timeout = 0: return immediately with available bytes. 
  *                       (Polling. Not recommended.)
