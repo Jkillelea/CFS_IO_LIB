@@ -288,6 +288,9 @@ speed_t IO_TransRS422GetBaudRateMacro(int32 bps)
         case 57600:
             baudRate = B57600;
             break;
+        case 9600:
+            baudRate = B9600;
+            break;
         case 115200:
             baudRate = B115200;
             break;
