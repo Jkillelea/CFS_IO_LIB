@@ -21,15 +21,15 @@
 #include "tc_sync.h"
 
 /*************************************************************************
-** Macro Definitions
+** Global variables
 *************************************************************************/
-IO_LIB_LibData_t    g_IO_LIB_LibData;
+IO_LIB_LibData_t g_IO_LIB_LibData;
 
 
 /*************************************************************************
 ** Protocol Library Init Functions
 *************************************************************************/
-extern int32 TMTF_LibInit(void);
+// extern int32 TMTF_LibInit(void);
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 /*                                                                 */
@@ -51,7 +51,6 @@ int32 IO_LibInit(void)
         CFE_ES_WriteToSysLog("IO_Lib Init failed.\n");
     }
 
-
     CFE_PSP_MemSet((void*) g_IO_LIB_LibData.EventTbl, 0x00, sizeof(g_IO_LIB_LibData.EventTbl));
 
     g_IO_LIB_LibData.EventTbl[0].EventID = IO_LIB_RESERVED_EID;
@@ -69,11 +68,13 @@ int32 IO_LibInit(void)
     g_IO_LIB_LibData.EventTbl[11].EventID = IO_LIB_TM_SDLP_EID;
     
     /* Register the table with CFE */
-    iStatus = CFE_EVS_Register(g_IO_LIB_LibData.EventTbl, IO_LIB_EVT_CNT, CFE_EVS_EventFilter_BINARY);
+    // iStatus = CFE_EVS_Register(g_IO_LIB_LibData.EventTbl, IO_LIB_EVT_CNT, CFE_EVS_EventFilter_BINARY);
+
     if (iStatus != CFE_SUCCESS)
     {
         CFE_ES_WriteToSysLog("IO Lib: Failed to register with EVS (0x%08X)\n", iStatus);
-        switch (iStatus) {
+        switch (iStatus)
+        {
             case CFE_SUCCESS: // Sucessful execution.
                 CFE_ES_WriteToSysLog("IO Lib: CFE_SUCCESS\n");
                 break;

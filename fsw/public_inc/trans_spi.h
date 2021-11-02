@@ -5,7 +5,8 @@
 
 #include "common_types.h"
 #include "io_lib.h"
-#include <linux/spi/spi.h>
+// #include <linux/spi/spi.h>
+#include <linux/spi/spidev.h>
 
 #define SPI_PORT_NAME_SIZE (20)
 
