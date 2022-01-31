@@ -12,7 +12,6 @@
 
 typedef struct {
     char   device[SPI_PORT_NAME_SIZE]; /* Device name (eg: "/dev/spidev0.0") */
-    int32  baudRate;                   /* Baud Rate in bytes per second.     */
     uint32 spiMode;                    /* SPI_MODE_0, 1, 2, 3                */
     uint32 spiSpeed;                   /* Bits per second                    */
     uint32 bitsPerWord;                /* Bits per word                      */
